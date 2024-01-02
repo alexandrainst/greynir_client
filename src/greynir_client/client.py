@@ -17,10 +17,6 @@ def translate_en_to_is(apikey: str, contents: list[str]) -> TranslationResponseD
         "Content-Type": "application/json",
         "accept": "application/json",
     }
-    contents = [
-            'Where is the museum? I want to buy bread and milk. I should buy a boat.',
-            'This fundamental plant growth research is also a key example of how Nasa is working to unlock agricultural innovations that could help us understand how plants might overcome stressful conditions in food-scarce areas here on Earth.',
-    ]
     translation_request = TranslationRequestData(
         contents=contents,
         sourceLanguageCode=LANGS.en,
